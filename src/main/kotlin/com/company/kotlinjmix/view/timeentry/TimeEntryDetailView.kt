@@ -6,6 +6,7 @@ import com.vaadin.flow.router.Route
 import io.jmix.core.TimeSource
 import io.jmix.flowui.view.*
 import org.springframework.beans.factory.annotation.Autowired
+import java.time.LocalDate
 import java.util.*
 
 
@@ -16,8 +17,9 @@ import java.util.*
 class TimeEntryDetailView : StandardDetailView<TimeEntry>() {
     @Autowired
     private val timeSource: TimeSource? = null
+
     @Subscribe
     private fun onInitEntity(event: InitEntityEvent<TimeEntry>) {
-        event.entity.entryDate= timeSource?.now()?.toLocalDateTime()
+        event.entity.entryDate = timeSource?.now()?.toLocalDateTime()
     }
 }
