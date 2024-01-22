@@ -4,6 +4,8 @@
     <menu id="application" title="msg://com.company.kotlinjmix/menu.application.title" opened="true">
         <item view="User.list" title="msg://com.company.kotlinjmix.view.user/UserListView.title"/>
         <item view="Project.list" title="msg://com.company.kotlinjmix.view.project/projectListView.title"/>
+        <item view="Task_.list" title="msg://com.company.kotlinjmix.view.task/taskListView.title"/>
+        <item view="TimeEntry.list" title="msg://com.company.kotlinjmix.view.timeentry/timeEntryListView.title"/>
     </menu>
 
 </menu-config>
