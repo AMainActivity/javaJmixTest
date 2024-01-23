@@ -25,6 +25,9 @@ open class User : JmixUserDetails, HasTimeZone {
     @JmixGeneratedValue
     var id: UUID? = null
 
+    @Column(name = "AVATAR")
+    var avatar: ByteArray? = null
+
     @Version
     @Column(name = "VERSION", nullable = false)
     var version: Int? = null

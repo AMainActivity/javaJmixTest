@@ -1,6 +1,7 @@
 package com.company.kotlinjmix.entity
 
 import io.jmix.core.DeletePolicy
+import io.jmix.core.FileRef
 import io.jmix.core.entity.annotation.JmixGeneratedValue
 import io.jmix.core.entity.annotation.OnDeleteInverse
 import io.jmix.core.metamodel.annotation.InstanceName
@@ -23,6 +24,9 @@ open class Task {
     @Column(name = "ID", nullable = false)
     @Id
     var id: UUID? = null
+
+    @Column(name = "ATTACHMENT", length = 1024)
+    var attachment: FileRef? = null
 
     @InstanceName
     @Column(name = "NAME", nullable = false)

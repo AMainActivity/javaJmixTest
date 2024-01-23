@@ -36,6 +36,11 @@
             <comboBox id="priorityField" property="priority"/>
             <textField id="estimationField" property="estimation"/>
             <textArea id="descriptionField" property="description" valueChangeMode="EAGER"/>
+            <fileStorageUploadField id="attachmentField"
+                                    property="attachment"
+                                    clearButtonVisible="true"
+                                    fileNameVisible="true"
+                                    uploadIcon="UPLOAD"/>
         </formLayout>
         <hbox>
             <button id="saveAndCloseBtn" action="detailSaveClose"/>
